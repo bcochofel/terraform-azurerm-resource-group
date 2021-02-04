@@ -19,6 +19,10 @@ repos:
       - id: terraform-validate
         files: ^examples/
       - id: goimports
+      - id: gofmt
+      - id: golint
+      - id: tflint
+        files: ^examples/.*\.tf
   - repo: https://github.com/commitizen-tools/commitizen
     rev: master
     hooks:
