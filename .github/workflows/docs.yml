@@ -1,4 +1,4 @@
-name: Changelog
+name: Documentation
 on:
   push:
     branches:
@@ -7,8 +7,8 @@ on:
       - '!master' # exclude main branch
 
 jobs:
-  changelog:
-    name: Changelog
+  docs:
+    name: Documentation
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -22,10 +22,13 @@ jobs:
       - name: Use GitVersion
         uses: gittools/actions/gitversion/execute@v0.9.8
         id: gitversion
+      - uses: tokusumi/markdown-embed-code@main
+        with:
+          markdown: "README.md"
       - name: Changelog
         id: changelog
         uses: nuuday/github-changelog-action@v1.0.0
         with:
           next_version: "${{ steps.gitversion.outputs.majorMinorPatch }}"
-      - name: Commit Changelog
+      - name: Commit CHANGELOG.ms and README.md
         uses: stefanzweifel/git-auto-commit-action@v4
