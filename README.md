@@ -5,9 +5,26 @@ This module creates Azure Resource Group.
 # Usage
 
 ```hcl:examples/basic/main.tf
+provider "azurerm" {
+  features {}
+}
+
+module "rg" {
+  source = "../../"
+
+  name     = "rgdemo"
+  location = "North Europe"
+
+  tags = {
+    ManagedBy   = "Terraform"
+    Environment = "sandbox"
+  }
+}
+
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ## Requirements
 
 | Name      | Version    |
@@ -37,6 +54,7 @@ This module creates Azure Resource Group.
 | name | The Resource Group name. |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 
 # Run tests
 
