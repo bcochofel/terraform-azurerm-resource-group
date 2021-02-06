@@ -24,34 +24,35 @@ module "rg" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Requirements
 
-| Name      | Version    |
-| --------- | ---------- |
+| Name | Version |
+|------|---------|
 | terraform | >= 0.12.20 |
-| azurerm   | >= 2.41.0  |
+| azurerm | >= 2.41.0 |
 
 ## Providers
 
-| Name    | Version   |
-| ------- | --------- |
+| Name | Version |
+|------|---------|
 | azurerm | >= 2.41.0 |
 
 ## Inputs
 
-| Name     | Description                                                                                                         | Type          | Default | Required |
-| -------- | ------------------------------------------------------------------------------------------------------------------- | ------------- | ------- | :------: |
-| location | The Azure Region where the Resource Group should exist.<br>Changing this forces a new Resource Group to be created. | `string`      | n/a     |   yes    |
-| name     | The Name which should be used for this Resource Group.<br>Changing this forces a new Resource Group to be created.  | `string`      | n/a     |   yes    |
-| tags     | A mapping of tags which should be assigned to the Resource Group.                                                   | `map(string)` | `{}`    |    no    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| location | The Azure Region where the Resource Group should exist.<br>Changing this forces a new Resource Group to be created. | `string` | n/a | yes |
+| name | The Name which should be used for this Resource Group.<br>Changing this forces a new Resource Group to be created. | `string` | n/a | yes |
+| tags | A mapping of tags which should be assigned to the Resource Group. | `map(string)` | `{}` | no |
 
 ## Outputs
 
-| Name | Description              |
-| ---- | ------------------------ |
-| id   | The Resource Group id.   |
+| Name | Description |
+|------|-------------|
+| id | The Resource Group id. |
+| location | The Resource Group location. |
 | name | The Resource Group name. |
+| tags | The Resource Group tags. |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
