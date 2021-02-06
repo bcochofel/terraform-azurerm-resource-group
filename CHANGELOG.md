@@ -2,10 +2,19 @@
 ## [Unreleased]
 
 
+<a name="1.2.0"></a>
+## [1.2.0] - 2021-02-06
+### Feat
+- add outputs
+
+
 <a name="1.1.2"></a>
 ## [1.1.2] - 2021-02-06
 ### Docs
 - update documentation
+
+### Pull Requests
+- Merge pull request [#6](https://github.com/bcochofel/terraform-azurerm-resource-group/issues/6) from bcochofel/documentation
 
 
 <a name="1.1.1"></a>
@@ -53,7 +62,8 @@
 - Merge pull request [#1](https://github.com/bcochofel/terraform-azurerm-resource-group/issues/1) from bcochofel/first_commit
 
 
-[Unreleased]: https://github.com/bcochofel/terraform-azurerm-resource-group/compare/1.1.2...HEAD
+[Unreleased]: https://github.com/bcochofel/terraform-azurerm-resource-group/compare/1.2.0...HEAD
+[1.2.0]: https://github.com/bcochofel/terraform-azurerm-resource-group/compare/1.1.2...1.2.0
 [1.1.2]: https://github.com/bcochofel/terraform-azurerm-resource-group/compare/1.1.1...1.1.2
 [1.1.1]: https://github.com/bcochofel/terraform-azurerm-resource-group/compare/1.1.0...1.1.1
 [1.1.0]: https://github.com/bcochofel/terraform-azurerm-resource-group/compare/0.2.0...1.1.0
