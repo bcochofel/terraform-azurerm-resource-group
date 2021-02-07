@@ -2,7 +2,7 @@
 
 This module creates Azure Resource Group.
 
-# Usage
+## Usage
 
 ```hcl:examples/basic/main.tf
 provider "azurerm" {
@@ -24,6 +24,7 @@ module "rg" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 
 ## Requirements
 
@@ -58,14 +59,14 @@ module "rg" {
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 
-# Run tests
+## Run tests
 
 ```bash
 cd test/
 go test -v
 ```
 
-# References
+## References
 
 * [Azure Resource Group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal)
 * [Terraform azurerm_resource_group](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group)
