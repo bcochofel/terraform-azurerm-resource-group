@@ -7,6 +7,9 @@
 ### Feat
 - resource group lock level option
 
+### Fix
+- lock level documentation
+
 
 <a name="1.2.1"></a>
 ## [1.2.1] - 2021-02-07
