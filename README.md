@@ -1,6 +1,10 @@
 # Terraform module to create Azure Resource Group
 
 This module creates Azure Resource Group.
+It also has the option to create a lock on the Resource Group scope.
+
+**NOTE: To use the lock level option the service principal must have the "Owner"
+or "User Access Administrator" roles.**
 
 ## Usage
 
@@ -79,3 +83,4 @@ go test -v
 
 * [Azure Resource Group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal)
 * [Terraform azurerm_resource_group](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group)
+* [Lock Resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources)
