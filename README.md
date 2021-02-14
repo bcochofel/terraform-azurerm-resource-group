@@ -24,8 +24,6 @@ module "rg" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
-
 ## Requirements
 
 | Name | Version |
@@ -39,11 +37,23 @@ module "rg" {
 |------|---------|
 | azurerm | >= 2.41.0 |
 
+## Modules
+
+No Modules.
+
+## Resources
+
+| Name |
+|------|
+| [azurerm_management_lock](https://registry.terraform.io/providers/hashicorp/azurerm/2.41.0/docs/resources/management_lock) |
+| [azurerm_resource_group](https://registry.terraform.io/providers/hashicorp/azurerm/2.41.0/docs/resources/resource_group) |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | location | The Azure Region where the Resource Group should exist.<br>Changing this forces a new Resource Group to be created. | `string` | n/a | yes |
+| lock\_level | Specifies the Level to be used for this RG Lock.<br>Possible values are Empty (no lock), CanNotDelete and ReadOnly. | `string` | `""` | no |
 | name | The Name which should be used for this Resource Group.<br>Changing this forces a new Resource Group to be created. | `string` | n/a | yes |
 | tags | A mapping of tags which should be assigned to the Resource Group. | `map(string)` | `{}` | no |
 
@@ -55,7 +65,6 @@ module "rg" {
 | location | The Resource Group location. |
 | name | The Resource Group name. |
 | tags | The Resource Group tags. |
-
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 

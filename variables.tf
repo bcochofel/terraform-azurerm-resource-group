@@ -19,3 +19,12 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "lock_level" {
+  description = <<EOT
+Specifies the Level to be used for this RG Lock.
+Possible values are Empty (no lock), CanNotDelete and ReadOnly.
+EOT
+  type        = string
+  default     = ""
+}
