@@ -2,6 +2,12 @@
 ## [Unreleased]
 
 
+<a name="1.3.1"></a>
+## [1.3.1] - 2021-02-16
+### Chore
+- versions.tf
+
+
 <a name="1.3.0"></a>
 ## [1.3.0] - 2021-02-14
 ### Feat
@@ -9,6 +15,9 @@
 
 ### Fix
 - lock level documentation
+
+### Pull Requests
+- Merge pull request [#9](https://github.com/bcochofel/terraform-azurerm-resource-group/issues/9) from bcochofel/lock_level
 
 
 <a name="1.2.1"></a>
@@ -83,7 +92,8 @@
 - Merge pull request [#1](https://github.com/bcochofel/terraform-azurerm-resource-group/issues/1) from bcochofel/first_commit
 
 
-[Unreleased]: https://github.com/bcochofel/terraform-azurerm-resource-group/compare/1.3.0...HEAD
+[Unreleased]: https://github.com/bcochofel/terraform-azurerm-resource-group/compare/1.3.1...HEAD
+[1.3.1]: https://github.com/bcochofel/terraform-azurerm-resource-group/compare/1.3.0...1.3.1
 [1.3.0]: https://github.com/bcochofel/terraform-azurerm-resource-group/compare/1.2.1...1.3.0
 [1.2.1]: https://github.com/bcochofel/terraform-azurerm-resource-group/compare/1.2.0...1.2.1
 [1.2.0]: https://github.com/bcochofel/terraform-azurerm-resource-group/compare/1.1.2...1.2.0
