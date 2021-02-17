@@ -15,7 +15,7 @@ EOT
 
   validation {
     condition     = length(var.name) >= 1 && length(var.name) <= 90 && can(regex("^[a-zA-Z0-9-._\\(\\)]+[a-zA-Z0-9-_\\(\\)]$", var.name))
-    error_message = "Invalid Resource Group name (check Azure Resource naming restrictions for more info)."
+    error_message = "Invalid name (check Azure Resource naming restrictions for more info)."
   }
 }
 
