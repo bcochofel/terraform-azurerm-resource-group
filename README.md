@@ -2,6 +2,8 @@
 
 This module creates Azure Resource Group.
 It also has the option to create a lock on the Resource Group scope.
+This module also validates the name according to the Azure Resource naming
+restrictions.
 
 **NOTE: To use the lock level option the service principal must have the "Owner"
 or "User Access Administrator" roles.**
@@ -28,12 +30,11 @@ module "rg" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Requirements
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.12.20 |
+| terraform | >= 0.13.0 |
 | azurerm | >= 2.41.0 |
 
 ## Providers
@@ -82,6 +83,7 @@ go test -v
 
 ## References
 
+* [Azure Resource naming restrictions](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules)
 * [Azure Resource Group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal)
 * [Terraform azurerm_resource_group](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group)
 * [Lock Resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources)
