@@ -30,6 +30,7 @@ module "rg" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ## Requirements
 
 | Name | Version |
@@ -72,6 +73,7 @@ No Modules.
 | name | The Resource Group name. |
 | tags | The Resource Group tags. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 
 ## Run tests
 
