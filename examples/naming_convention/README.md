@@ -11,6 +11,17 @@ No requirements.
 
 No provider.
 
+## Modules
+
+| Name | Source | Version |
+|------|--------|---------|
+| naming | github.com/Azure/terraform-azurerm-naming?ref=e75a386 |  |
+| rg | ../../ |  |
+
+## Resources
+
+No resources.
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -24,7 +35,6 @@ No provider.
 | Name | Description |
 |------|-------------|
 | name | n/a |
-
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 # References

@@ -31,7 +31,6 @@ module "rg" {
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
-
 ## Requirements
 
 | Name | Version |
@@ -53,8 +52,8 @@ No Modules.
 
 | Name |
 |------|
-| [azurerm_management_lock](https://registry.terraform.io/providers/hashicorp/azurerm/2.41.0/docs/resources/management_lock) |
-| [azurerm_resource_group](https://registry.terraform.io/providers/hashicorp/azurerm/2.41.0/docs/resources/resource_group) |
+| [azurerm_management_lock](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/management_lock) |
+| [azurerm_resource_group](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group) |
 
 ## Inputs
 
@@ -82,6 +81,24 @@ No Modules.
 cd test/
 go test -v
 ```
+
+## pre-commit hooks
+
+This repository uses [pre-commit](https://pre-commit.com/).
+
+To install execute:
+
+```bash
+pre-commit install --install-hooks -t commit-msg
+```
+
+To run the hooks you need to install:
+
+* [terraform](https://github.com/hashicorp/terraform)
+* [terraform-docs](https://github.com/terraform-docs/terraform-docs)
+* [TFLint](https://github.com/terraform-linters/tflint)
+* [TFSec](https://github.com/tfsec/tfsec)
+* [checkov](https://github.com/bridgecrewio/checkov)
 
 ## References
 
