@@ -11,6 +11,16 @@ No requirements.
 
 No provider.
 
+## Modules
+
+| Name | Source | Version |
+|------|--------|---------|
+| rg | ../../ |  |
+
+## Resources
+
+No resources.
+
 ## Inputs
 
 No input.
@@ -20,5 +30,4 @@ No input.
 | Name | Description |
 |------|-------------|
 | name | n/a |
-
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
