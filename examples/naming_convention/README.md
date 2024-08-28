@@ -5,18 +5,21 @@ This example creates a basic Resource Group with some custom tags using Azure na
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.9.0 |
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~> 3.0.0 |
 
 ## Providers
 
-No provider.
+No providers.
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
-| naming | github.com/Azure/terraform-azurerm-naming?ref=e75a386 |  |
-| rg | ../../ |  |
+| <a name="module_naming"></a> [naming](#module\_naming) | Azure/naming/azurerm | 0.4.1 |
+| <a name="module_rg"></a> [rg](#module\_rg) | ../../ | n/a |
 
 ## Resources
 
@@ -26,15 +29,15 @@ No resources.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| environment | Environment for Azure naming convention. | `string` | `"sand"` | no |
-| location | Azure Region to create resource. | `string` | `"northeurope"` | no |
-| workload | Workload for Azure naming convention. | `string` | `"demo"` | no |
+| <a name="input_environment"></a> [environment](#input\_environment) | Environment for Azure naming convention. | `string` | `"sand"` | no |
+| <a name="input_location"></a> [location](#input\_location) | Azure Region to create resource. | `string` | `"northeurope"` | no |
+| <a name="input_workload"></a> [workload](#input\_workload) | Workload for Azure naming convention. | `string` | `"demo"` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| name | n/a |
+| <a name="output_name"></a> [name](#output\_name) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 # References

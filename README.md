@@ -10,7 +10,7 @@ or "User Access Administrator" roles.**
 
 ## Usage
 
-```hcl:examples/basic/main.tf
+```hcl
 provider "azurerm" {
   features {}
 }
@@ -30,48 +30,47 @@ module "rg" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Requirements
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.13.0 |
-| azurerm | >= 2.41.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.9.0 |
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~> 3.0.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| azurerm | >= 2.41.0 |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | ~> 3.0.0 |
 
 ## Modules
 
-No Modules.
+No modules.
 
 ## Resources
 
-| Name |
-|------|
-| [azurerm_management_lock](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/management_lock) |
-| [azurerm_resource_group](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group) |
+| Name | Type |
+|------|------|
+| [azurerm_management_lock.resource-group-level-lock](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/management_lock) | resource |
+| [azurerm_resource_group.rg](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| location | The Azure Region where the Resource Group should exist.<br>Changing this forces a new Resource Group to be created. | `string` | n/a | yes |
-| lock\_level | Specifies the Level to be used for this RG Lock.<br>Possible values are Empty (no lock), CanNotDelete and ReadOnly. | `string` | `""` | no |
-| name | The Name which should be used for this Resource Group.<br>Changing this forces a new Resource Group to be created. | `string` | n/a | yes |
-| tags | A mapping of tags which should be assigned to the Resource Group. | `map(string)` | `{}` | no |
+| <a name="input_location"></a> [location](#input\_location) | The Azure Region where the Resource Group should exist.<br>Changing this forces a new Resource Group to be created. | `string` | n/a | yes |
+| <a name="input_lock_level"></a> [lock\_level](#input\_lock\_level) | Specifies the Level to be used for this RG Lock.<br>Possible values are Empty (no lock), CanNotDelete and ReadOnly. | `string` | `""` | no |
+| <a name="input_name"></a> [name](#input\_name) | The Name which should be used for this Resource Group.<br>Changing this forces a new Resource Group to be created. | `string` | n/a | yes |
+| <a name="input_tags"></a> [tags](#input\_tags) | A mapping of tags which should be assigned to the Resource Group. | `map(string)` | `{}` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| id | The Resource Group id. |
-| location | The Resource Group location. |
-| name | The Resource Group name. |
-| tags | The Resource Group tags. |
+| <a name="output_id"></a> [id](#output\_id) | The Resource Group id. |
+| <a name="output_location"></a> [location](#output\_location) | The Resource Group location. |
+| <a name="output_name"></a> [name](#output\_name) | The Resource Group name. |
+| <a name="output_tags"></a> [tags](#output\_tags) | The Resource Group tags. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 
